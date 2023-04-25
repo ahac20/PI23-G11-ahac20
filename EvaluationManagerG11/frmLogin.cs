@@ -21,5 +21,11 @@ namespace EvaluationManagerG11 {
         private void frmLogin_Load(object sender, EventArgs e) {
 
         }
+
+        private void btLogin_Click(object sender, EventArgs e) {
+            if(txtUsername.Text == "") {
+                MessageBox.Show("Korisničko ime nije unešeno!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
